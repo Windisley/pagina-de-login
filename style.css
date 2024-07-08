@@ -1,0 +1,211 @@
+:root{
+--color-primary: #252526;
+--color-secundary:  #8C8C8C;
+--color-terciary:  #BFBFBF;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+}
+
+body{
+  font-size: 65%;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container{
+  width: 100%;
+  max-width: 1900px;
+  overflow: hidden;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--color-terciary);
+  padding: 1rem;
+}
+
+.box-form{
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  min-height: 500px;
+  padding: 1rem;
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-secundary);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  
+  
+}
+
+ .form{
+  display: none;
+ }
+
+.box-form .login{
+ text-align: center;
+ text-transform: uppercase;
+ font-size: 2rem;
+ color: var(--color-terciary);
+ letter-spacing: .2px;
+ position: absolute;
+ top: 3.5rem;
+ left: 50%;
+ transform: translate(-50%, -50%);
+
+}
+
+.box-form .boxemail, .boxpassword, .boxname, .boxlastname{
+ width: 100%;
+ padding: 1em;
+ margin: 0 auto;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ 
+
+}
+
+.box-form .boxemail input, .boxpassword input, .boxname input, .boxlastname input{
+ width: 100%;
+ max-width: 220px;
+ margin: 0 auto;
+ padding: 8px 26px; 
+ text-align: end;
+ border: 1px solid var(--color-secundary);
+ 
+}
+
+.boxemoji{
+ width: 100%;
+ margin: 0 auto;
+ padding: 5px;
+ display: grid;
+ place-items: center;
+ transition:  .5s;
+ display: none;
+
+}
+
+.boxemoji .emoji{
+ font-size: 1.5rem;
+ animation: rotate 1.1s 1 linear;
+ transition: all .8s ease-in-out;
+}
+
+ @keyframes rotate{
+  to{
+    transform: rotateY(360deg);
+  }
+
+
+ }
+
+
+.boxbutton{
+ width: 100%;
+ margin: 0 auto;
+ padding: 8px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ margin-top: 1em;
+}
+
+.boxbutton button{
+ width: 100%;
+ max-width: 220px;
+ margin: 0 auto;
+ text-align: center;
+ padding: 8px 26px;
+ background-color: var(--color-terciary);
+ color: var(--color-primary);
+ border: 1px solid var(--color-terciary);
+ cursor: pointer;
+ text-transform: uppercase;
+ font-weight: 700;
+ transition:all .8s linear;
+ transform: translateY(0);
+}
+
+.boxbutton button:hover{
+ transform: translateY(-8px);
+
+}
+
+.boxbutton button:focus{
+ background-image: linear-gradient(to right, var(--color-secundary), var(--color-terciary));
+
+}
+
+#boxreg{
+  width: 100%;
+  max-width: 220px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+  
+}
+
+#boxreg a{
+ 
+ font-size: .8rem;
+ letter-spacing: .2px;
+ transition: all .5s ease-in-out;
+}
+
+#boxreg a:hover{
+ transform: rotate(-15deg);
+
+}
+
+/* .box_mode_dark{
+ position: absolute;
+ width: 100%;
+ max-width: 70px;
+ padding: 13px;
+ border: 1px solid var(--color-terciary);
+ top: 2%;
+ left: 85%;
+ border-radius: 18px;
+ cursor: pointer;
+
+}
+
+.box_mode_dark .light{
+ position: absolute;
+ width: 100%;
+ max-width: 20px;
+ height: 20px;
+ border: 1px solid rgb(255, 217, 0);
+ top: 5%;
+ left: 66%;
+ border-radius: 50%;
+ cursor: pointer;
+ background-color: yellow;
+ 
+}
+
+
+ */
+
+
+
+
