@@ -19,3 +19,22 @@ password.addEventListener("input", () => {
 
 
 })
+
+
+ const boxreg = document.querySelector("#boxreg a")
+ const boxlogin = document.querySelector("#boxlogin a")
+ const $form = document.querySelector(".form")
+ const formtow = document.querySelector(".formtow") 
+
+ boxreg.addEventListener("click", ()=>{
+   formtow.style = "opacity: 1; display: block; transition: .6s ease-in-out;"   
+   $form.style = " display: none; opacity:0; transition: .6s ease-in-out"
+}) 
+
+boxlogin.addEventListener("click", ()=>{
+  formtow.style = "opacity: 0; display: none; transition: .6s ease-in-out;"   
+   $form.style = " display: block; opacity:1; transition: .6s ease-in-out"
+
+})
+
+
